@@ -89,14 +89,14 @@
 }
 
 .formButton:hover {
-  background-color: rgb(236, 176, 103); /* Cambia el color de fondo al pasar el cursor */
-  box-shadow: 0 7px 13px rgba(249, 192, 106, 0.7); /* Aumentar la sombra al pasar el cursor */
+  background-color: rgb(236, 176, 103);
+  box-shadow: 0 7px 13px rgba(249, 192, 106, 0.7);
 }
 
 .formButton:active {
-  background-color: #f9c06a; /* Cambia el color de fondo al hacer clic */
-  box-shadow: 0 4px 8px rgba(249, 192, 106, 0.5); /* Reduce la sombra al hacer clic */
-  transform: translateY(2px); /* Mueve el botón ligeramente hacia abajo al hacer clic */
+  background-color: #f9c06a;
+  box-shadow: 0 4px 8px rgba(249, 192, 106, 0.5);
+  transform: translateY(2px);
 }
 
 body {
