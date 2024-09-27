@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "ClickerScript";
+  src: url("fonts/ClickerScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlayballRegular";
+  src: url("fonts/Playball-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayMedium";
+  src: url("fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayRegular";
+  src: url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayBold";
+  src: url("fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+.ClickerScript {
+  font-family: "ClickerScript", sans-serif;
+}
+
+.PlayballRegular {
+  font-family: "PlayballRegular", sans-serif;
+}
+
+.PlayfairDisplayMedium {
+  font-family: "PlayfairDisplayMedium", serif;
+}
+
+.PlayfairDisplayRegular {
+  font-family: "PlayfairDisplayRegular", serif;
+}
+
+.PlayfairDisplayBold {
+  font-family: "PlayfairDisplayBold", serif;
+}
+
+.whiteText {
+  color: #ffffff !important;
+}
+
+.navbar {
+  background-color: transparent !important;
+  height: 15vh;
+}
+
+.logoText {
+  font-size: 35px !important;
+}
+
+.navItemText {
+  font-size: 14px !important;
+}
+
+.saludoText {
+  font-size: 22px !important;
+}
+
+.bigWordText {
+  font-size: 220px !important;
+}
+
+.argumentText {
+  font-size: 20px !important;
+}
+
+.iconCircularImage {
+  max-width: 20px;
+  max-height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.formButton {
+  border-radius: 24px;
+  background-color: #f9c06a;
+  border: none;
+  color: #1e1e1e;
+  box-shadow: 0 6px 12px rgba(249, 192, 106, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.formButton:hover {
+  background-color: rgb(236, 176, 103); /* Cambia el color de fondo al pasar el cursor */
+  box-shadow: 0 7px 13px rgba(249, 192, 106, 0.7); /* Aumentar la sombra al pasar el cursor */
+}
+
+.formButton:active {
+  background-color: #f9c06a; /* Cambia el color de fondo al hacer clic */
+  box-shadow: 0 4px 8px rgba(249, 192, 106, 0.5); /* Reduce la sombra al hacer clic */
+  transform: translateY(2px); /* Mueve el botón ligeramente hacia abajo al hacer clic */
+}
+
+body {
+  background-image: linear-gradient(90deg, #1e1e1e 0%, rgba(0, 0, 0, 0) 100%), url("src/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 5%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.bodyContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-direction: column;
+  width: calc(100vw);
+  margin: 0;
+}
+
+@media (max-width: 916px) {
+  .bigWordText {
+    font-size: 90px !important;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="src/iconic.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <title>Moca Doll</title>
+</head>
+
+<body>
+  <div class="row">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="ClickerScript navbar-brand whiteText logoText" href="#">Mocca Doll</a>
+        <button class="navbar-toggler" style="color: white;" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="PlayfairDisplayMedium nav-link whiteText navItemText" href="https://www.threads.net/@lizzkayyyy"
+                target="_blank">Threads</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="PlayfairDisplayMedium nav-link whiteText navItemText"
+                href="https://www.instagram.com/lizzkayyyy?igsh=aWQzaDR2NXA1cXU5" target="_blank">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row bodyContent">
+    <p class="PlayballRegular letterSpacing whiteText saludoText">Una iniciativa de Lizz ... <img class="iconCircularImage"
+        title="Soy esta" src="src/admin.png" style="cursor: pointer;" onclick="openModal('src/admin.png')"></p>
+
+    <h1 class="ClickerScript whiteText bigWordText">Cartitas</h1>
+
+    <p class="PlayfairDisplayRegular whiteText argumentText">
+      Creo cartas personalizadas con el objetivo de ofrecer un espacio íntimo para reflexionar y sentirse valorados.<br>
+      Siempre me ha encantado escribir, especialmente cuando puedo conectar con lo que alguien siente y necesita
+      escuchar.<br> Por eso, decidí abrir este espacio, para que, a través de cada palabra, puedas sentirte comprendido y
+      acompañado.<br> Mi meta es que cada carta sea un reflejo de tus emociones, un detalle que verdaderamente toque el
+      corazón.
+    </p>
+
+    <button type="button" class="formButton PlayfairDisplayBold" style="width: 134px; height: 48px; margin-left: 15px;"
+      onclick="window.open('https://docs.google.com/forms/d/1ajlvY5uiOIgyzbYPsz81XpDg2qfVrI7gzy3YWARDXuI/edit?pli=1&pli=1&pli=1&pli=1&pli=1&edit_requested=true&fbzx=5109181566347420880&edit_requested=true'), '_blank'">
+      Pide La Tuya
+    </button>
+  </div>
+
+</body>
+
+<footer>
+  <script>
+    function openModal(imageSrc) {
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = imageSrc;
+      const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+      modal.show();
+    }
+  </script>  
+</footer>
+
+</html>
+
+
+<!-- Modal -->
+<div class="modal fade lightbox" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <img id="modalImage" src="" alt="Imagen ampliada" class="img-fluid">
+  </div>
+</div>
