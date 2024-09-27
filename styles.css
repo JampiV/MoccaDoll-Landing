@@ -50,6 +50,10 @@
 .navbar {
   background-color: transparent !important;
   height: 15vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logoText {
@@ -86,6 +90,7 @@
   color: #1e1e1e;
   box-shadow: 0 6px 12px rgba(249, 192, 106, 0.5);
   transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .formButton:hover {
@@ -109,7 +114,7 @@ body {
   margin: 0;
   padding-left: 5%;
   width: 100vw;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .bodyContent {
@@ -120,6 +125,7 @@ body {
   flex-direction: column;
   width: calc(100vw);
   margin: 0;
+  padding-top: 10vh;
 }
 
 @media (max-width: 916px) {
